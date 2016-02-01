@@ -1,0 +1,18 @@
+package main
+
+import "fmt"
+
+func main() {
+	var bignum int
+	var smallnum int
+        var remainder int
+	fmt.Print("Please enter a big number: ")
+	fmt.Scan(&bignum)
+	fmt.Print("Please enter a smaller number: ")
+	fmt.Scan(&smallnum)
+
+        remainder = (bignum % smallnum)
+
+	fmt.Println(remainder)
+	
+}
