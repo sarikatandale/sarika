@@ -1,0 +1,13 @@
+package main
+
+import "fmt"
+
+func main() {
+	var numOne int
+	var numTwo int
+	fmt.Print("Enter a large number: ")
+	fmt.Scan(&number1)
+	fmt.Print("Enter a smaller number: ")
+	fmt.Scan(&number2)
+	fmt.Println(number1, "%", number2, " = ", number1%number2)
+}
