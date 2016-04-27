@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Title</title>
+</head>
+<body>
+	<div id="content"></div>
+</body>
+<script type="text/javascript">
+	var unorderedList = [ "Apple", "Mango", "Grapes", "Kiwi" ];
+	document.getElementById('content').innerHTML = unorderedList;
+</script>
+</html>
