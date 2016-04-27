@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en"
+	style="background: url('https://commons.wikimedia.org/wiki/Category:Quality_images_of_Bangladesh#/media/File:Coral_Probal.jpg') no-repeat center center fixed;">
+<head>
+<meta charset="UTF-8">
+<title>Title</title>
+</head>
+<body>
+	<div
+		style="position: fixed; top: 50%; left: 50%; font-size: 40px; color: white;"
+		id="content"></div>
+</body>
+<script type="text/javascript">
+	var content = document.getElementById('content')
+	var qoutes = [ "live", "life ", "happy" ];
+	var images = [
+			"https://commons.wikimedia.org/wiki/Category:Quality_images_of_Japan#/media/File:130608_Matsumoto_Castle_Matsumoto_Nagano_pref_Japan01bs5.jpg",
+			"https://commons.wikimedia.org/wiki/Category:Quality_images_of_Japan#/media/File:130823Nikka_Wisky_Yoichi_Distillery_Hokkaido_Japan02s3.jpgg" ];
+	var index = getRandomIndex(qoutes);
+	content.innerHTML = qoutes[index];
+	index = getRandomIndex(images);
+	var style = "background: url('%s') no-repeat center center fixed;".split(
+			'%s').join(images[index]);
+	document.documentElement.setAttribute('style', style);
+	window.setTimeout(function() {
+		location.reload();
+	}, 4000);
+	function getRandomIndex(array) {
+		return Math.floor(Math.random() * array.length);
+	}
+</script>
+</html>
